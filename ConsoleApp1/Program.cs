@@ -49,6 +49,12 @@ namespace Task1
             }
             return min;
         }
+
+        public int Conflict()
+        {
+            int toReturn = 0;
+            return toReturn;
+        }
         static void Main(String [] args)
         {
             Console.Write("Please, enter first number: ");
