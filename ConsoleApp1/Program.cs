@@ -5,11 +5,21 @@ namespace Task1
     {
         class StringToNumber
         {
+            int number;
             public StringToNumber(String input)
             {
-                int parsed = int.Parse(input);
-                Console.WriteLine(parsed +100);
+                number = int.Parse(input);
+                Console.WriteLine(number + 100);
             }
+            public int returnNumber()
+            {
+                return number;
+            }
+        }
+        public int calculateAverage(int input1, int input2)
+        {
+            var average = (input1 + input2) / 2;
+            return average;
         }
         static void Main(String [] args)
         {
