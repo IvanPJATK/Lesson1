@@ -49,11 +49,10 @@ namespace Task1
             }
             return min;
         }
-
         public int Conflict()
         {
-            int toReturn = 0;
-            return toReturn;
+            int result = 0;
+            return result;
         }
         static void Main(String [] args)
         {
