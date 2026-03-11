@@ -21,6 +21,15 @@ namespace Task1
             var average = (input1 + input2) / 2;
             return average;
         }
+        public int calculateAverage(int[] values)
+        {
+            var average = 0;
+            for(int i = 0; i < values.Length; i++)
+            {
+                average += values[i];
+            }
+            return average/values.Length;
+        }
         static void Main(String [] args)
         {
             Console.Write("Please, enter first number: ");
