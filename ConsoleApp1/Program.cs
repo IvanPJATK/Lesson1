@@ -49,6 +49,11 @@ namespace Task1
             }
             return min;
         }
+        public int Conflict()
+        {
+            int result = 0;
+            return result;
+        }
         static void Main(String [] args)
         {
             Console.Write("Please, enter first number: ");
