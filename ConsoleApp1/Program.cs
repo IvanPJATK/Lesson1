@@ -42,12 +42,12 @@ namespace Task1
 
         public int CalculateMin(int[] values)
         {
-            var max = 0;
+            var min = values[0];
             for (int i = 0; i < values.Length; i++)
             {
-                if (values[i] < max) { max = values[i]; }
+                if (values[i] < min) { min = values[i]; }
             }
-            return max;
+            return min;
         }
         static void Main(String [] args)
         {
