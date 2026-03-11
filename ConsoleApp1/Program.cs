@@ -39,6 +39,16 @@ namespace Task1
             }
             return max;
         }
+
+        public int CalculateMin(int[] values)
+        {
+            var max = 0;
+            for (int i = 0; i < values.Length; i++)
+            {
+                if (values[i] < max) { max = values[i]; }
+            }
+            return max;
+        }
         static void Main(String [] args)
         {
             Console.Write("Please, enter first number: ");
