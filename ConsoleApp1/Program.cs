@@ -23,10 +23,17 @@ namespace Task1
         }
         static void Main(String [] args)
         {
-            Console.Write("Please, enter a number: ");
+            Console.Write("Please, enter first number: ");
             string input = Console.ReadLine();
             Console.WriteLine(input);
+            Console.Write("Please, enter second number: ");
+            string input2 = Console.ReadLine();
+            Console.WriteLine(input2);
             StringToNumber processer = new StringToNumber(input);
+            StringToNumber processer2 = new StringToNumber(input2);
+            InputHandler handler = new InputHandler();
+            var average = handler.calculateAverage(processer.returnNumber(), processer2.returnNumber());
+            Console.WriteLine(average);
         }
     }
 }
